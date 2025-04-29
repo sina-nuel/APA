@@ -1,22 +1,24 @@
-# ADRMX: Additive Disentanglement of Domain Features with Remix Loss
+# APA: DOMAIN GENERALIZATION
 
-This is an official implementation of [ADRMX: Additive Disentanglement of Domain Features with Remix Loss](https://arxiv.org/abs/2308.06624). In this repository, we provide the codes for required DomainBed extensions to reproduce our results. 
-
-![](./figures/model_figure.png)
+USING FREQUENCY BASED AUGMENTATION
 
 ## Preparing Environment
+1. Prepare the datasets.
+2. Clone the DomainBed repo: [DomainBed](https://github.com/facebookresearch/DomainBed.git)
+3. Clone APA repo.
+4. Use  `algorithms.py` from our repo and replace them with the oroginal ones in DomainBed's directory.
+5. Inside the `main.py` you can define the dataset, output directory, hyperparameters and other options.
+6. By running the `main.py` file the training starts.
 
-1. Clone the DomainBed repository: [DomainBed](https://github.com/facebookresearch/DomainBed.git)
-2. Download the datasets and adjust the paths
-3. Clone this repository to update the files `algorithms.py`, `hparams_registry.py` and add `utils.py` under domainbed directory
+   
 
 
 
 ## Getting Started
 1. **Conda (Recommended)**: 
     ```shell
-    conda create -n ADRMX
-    conda activate ADRMX
+    conda create --name APA_env
+    conda activate APA_env
     ```
 
 2. **Pip**
@@ -27,14 +29,7 @@ This is an official implementation of [ADRMX: Additive Disentanglement of Domain
 3. **Example Training Command**: 
     ```shell
     cd PROJECT_PATH 
-    python -m domainbed.scripts.train --data_dir=./domainbed/data/ --algorithm ADRMX --dataset PACS
+    python -m domainbed.scripts.train --data_dir=./domainbed/data/ --algorithm APA --dataset PACS
     ```
 
-```BibTeX
-@article{demirel2023adrmx,
-  title={ADRMX: Additive Disentanglement of Domain Features with Remix Loss},
-  author={Demirel, Berker, Aptoula, Erchan and Ozkan, Huseyin},
-  journal={arXiv preprint arXiv:2308.06624},
-  year={2023}
-}
-```
+

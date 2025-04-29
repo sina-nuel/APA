@@ -29,7 +29,7 @@ USING FREQUENCY BASED AUGMENTATION
 3. **Example Training Command**: 
     ```shell
     cd PROJECT_PATH 
-    python -m domainbed.scripts.train --data_dir=./domainbed/data/ --algorithm APA --dataset PACS
+    python main.py
     ```
 
 

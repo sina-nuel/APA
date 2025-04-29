@@ -6,7 +6,8 @@
 3. Clone APA repo.
 4. Use  `algorithms.py` from our repo and replace them with the oroginal ones in DomainBed's directory.
 5. Inside the `main.py` you can define the dataset, output directory, hyperparameters and other options.
-6. By running the `main.py` file the training starts.
+6. Set other hyperparameters inside `hparams.json`.
+7. By running the `main.py` file the training starts.
 
    
 

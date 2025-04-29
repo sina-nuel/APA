@@ -28,7 +28,7 @@ USING FREQUENCY BASED AUGMENTATION
 
 3. **Example Training Command**: 
     ```shell
-    cd PROJECT_PATH 
+   
     python main.py
     ```
 

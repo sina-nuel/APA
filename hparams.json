@@ -1,0 +1,15 @@
+{
+  "batch_size": 8,
+  "beta1": 0.9,
+  "class_balanced": true,
+  "data_augmentation": false,
+  "dinov2": false,
+  "freeze_bn": false,
+  "lr": 3e-05,
+  "nonlinear_classifier": false,
+  "resnet18": false,
+  "resnet50_augmix": false,
+  "vit": false,
+  "vit_attn_tune": false,
+  "weight_decay": 0.0001
+}
